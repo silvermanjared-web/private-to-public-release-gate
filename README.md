@@ -1,5 +1,7 @@
 # Private-to-Public Release Gate
 
+![Private-to-Public Release Gate](assets/private-to-public-release-gate.png)
+
 A small Go reference implementation for publishing a reviewed distribution from a private canonical repository without treating “the trees match” as proof that the content is safe to publish.
 
 ## The problem
