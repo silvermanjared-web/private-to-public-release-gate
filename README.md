@@ -68,3 +68,9 @@ Run the complete validation:
 ```
 
 See [SECURITY.md](SECURITY.md) for reporting and [USAGE.md](USAGE.md) for usage boundaries.
+
+## Portfolio relationship
+
+This repository is the publication-governance layer in the [Jared Silverman GitHub ecosystem](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/ecosystem-map.md). Growth Architecture OS owns the canonical relationship map; the profile repository is the front door; the intelligence, operations, playbook, brand-context, and design-system repositories demonstrate the operating layers. This gate defines how a reviewed public derivative can cross the boundary from private canonical work without exposing private context.
+
+The relationship is architectural, not universal provenance: inclusion in the ecosystem does not mean every public repository is generated from a private source.
