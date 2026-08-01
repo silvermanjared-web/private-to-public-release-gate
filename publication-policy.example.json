@@ -1,0 +1,22 @@
+{
+  "overlay_dir": "_public-overlay",
+  "exclude_paths": [
+    ".git",
+    "private",
+    "reports"
+  ],
+  "allowed_overlay_paths": [
+    "README.md"
+  ],
+  "privacy": {
+    "allowed_home_users": [
+      "local-operator"
+    ],
+    "allowed_emails": [
+      "work@example.com"
+    ],
+    "forbidden_terms": [
+      "internal-company.example"
+    ]
+  }
+}
