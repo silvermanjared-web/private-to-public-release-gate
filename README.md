@@ -35,6 +35,12 @@ The pipeline fails closed when:
 
 Privacy findings expose only the path and rule. Matched private values are suppressed.
 
+## Field validation
+
+This pattern was first exercised against a real private canonical governance repository and its reviewed sanitized distribution. The initial detector run reported **56 path-level findings**: **25 content differences**, **7 distribution-only entries**, and **24 canonical-only exclusions**. Each path received an explicit direction decision: preserve the reviewed distribution version through the allowlisted overlay, retain a distribution-only public surface, or exclude a canonical-only private control-plane entry. After those decisions were encoded, the same detector reached **zero drift** and enforcement was re-enabled.
+
+That original distribution has since been archived after the reusable publication pattern was extracted into this repository. The archived consumer is no longer an active product, but the reconciliation result remains the operational evidence behind this reference implementation: the gate was used to turn a noisy first measurement into a reviewed, enforceable zero-drift contract against a real private system.
+
 ## Quick start
 
 Copy `publication-policy.example.json` into the private canonical repository, rename it to `publication-policy.json`, and configure its exclusions, overlay allowlist, synthetic identities, and private terms.
