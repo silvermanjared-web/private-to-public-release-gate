@@ -2,3 +2,7 @@
 bin/
 coverage.out
 *.tmp
+
+# Generated per-folder document-network manifests. Generated state, not source.
+DOCS_NETWORK.json
+DOCS_NETWORK.md
