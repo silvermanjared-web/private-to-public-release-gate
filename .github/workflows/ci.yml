@@ -10,12 +10,10 @@ permissions:
 
 jobs:
   validate:
-    runs-on: macos-latest
+    runs-on: [self-hosted, macOS, ARM64, home-root-federation]
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
-        with:
-          go-version: "1.26.5"
-          cache: false
+      - name: Verify governed host toolchain
+        run: /opt/homebrew/bin/go version
       - name: Validate
         run: ./scripts/validate.sh
