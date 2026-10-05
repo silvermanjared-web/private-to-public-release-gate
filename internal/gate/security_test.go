@@ -13,6 +13,7 @@ func TestPrivacyFindingDoesNotEchoForbiddenValue(t *testing.T) {
 	write(t, distribution, "notes.txt", "connect to safe-host.example\n", 0o644)
 
 	policy := Policy{
+		OverlayDir: "_public-overlay",
 		Privacy: PrivacyPolicy{
 			ForbiddenTerms: []string{privateValue},
 		},
