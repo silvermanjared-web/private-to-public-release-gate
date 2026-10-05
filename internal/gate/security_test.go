@@ -1,6 +1,7 @@
 package gate
 
 import (
+	"os"
 	"strings"
 	"testing"
 )
@@ -11,6 +12,9 @@ func TestPrivacyFindingDoesNotEchoForbiddenValue(t *testing.T) {
 	privateValue := "private-host.example"
 	write(t, source, "notes.txt", "connect to "+privateValue+"\n", 0o644)
 	write(t, distribution, "notes.txt", "connect to safe-host.example\n", 0o644)
+	if err := os.Mkdir(source+"/_public-overlay", 0o755); err != nil {
+		t.Fatal(err)
+	}
 
 	policy := Policy{
 		OverlayDir: "_public-overlay",
