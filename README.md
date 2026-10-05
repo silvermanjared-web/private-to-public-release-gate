@@ -179,6 +179,13 @@ For portfolio evidence, read `proof-points.md`.
 - [Marketing Ops Toolkit](https://github.com/silvermanjared-web/marketing-ops-toolkit)
 - [AI Context & Design System](https://github.com/silvermanjared-web/brand-context-system)
 
+
+## Federation
+
+This repository is an autonomous member of the public [Growth Architecture OS federation](https://github.com/silvermanjared-web/growth-architecture-os/blob/main/docs/public-federation.md). It remains independently usable while publishing explicit contracts for what it provides, what it can consume, and the authority it retains locally.
+
+See [FEDERATION.md](FEDERATION.md).
+
 ## IP and usage
 
 This repository is public for professional review and architectural reference. It is not licensed for commercial reuse, resale, model training, or derivative productization without permission.
